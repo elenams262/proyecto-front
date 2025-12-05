@@ -1,1 +1,119 @@
-<p>app works!</p>
+<nav class="navbar sticky-top bg-body-tertiary d-flex">
+  <div class="logo-box container-fluid justify-content-around">
+    <a class="navbar-brand p-0 mb-1" href="/">
+      <img src="assets/imagenes/logo-udvillalba.png" class="logo" alt="Logo UD Villalba"/>
+    </a>
+    <div>
+      <ul class="menu d-flex list-unstyled gap-5 fw-semibold mb-0">
+        <a href="#jornada" class="text-decoration-none text-dark"><li>HORARIO</li></a>
+        <a href="#clasificacion" class="text-decoration-none text-dark"><li>CLASIFICACIÓN</li></a>
+        <a href="#entrenamiento" class="text-decoration-none text-dark"><li>ENTRENAMIENTO EXTRA</li></a>
+        <a href="#menu" class="text-decoration-none text-dark"><li>MENÚ</li></a>
+        <a href="#noticias" class="text-decoration-none text-dark"><li>NOTICIAS</li></a>
+      </ul>
+    </div>
+    <em class="eslogan fs-5">Un escudo, una ilusión</em>
+  </div>
+</nav>
+
+<img src="assets/imagenes/infantil-femenino.jpg" class="infantil-box mb-5 text-center d-flex w-100 object-fit-cover" style="max-height: 400px;" alt="Equipo Infantil" />
+
+<div class="jornada col-12 d-flex align-items-center justify-content-center">
+  <h2 id="jornada">JORNADA 1</h2>
+</div>
+
+<div class="d-flex justify-content-center m-4">
+  <section class="jornada-box rounded d-flex col-12 justify-content-around align-items-center bg-light p-4">
+    
+    <div class="foto-infantil-box d-flex justify-content-center flex-column align-items-center">
+      <h1 class="titulo text-center mt-4 fs-2">INFANTIL FEMENINO</h1>
+      <br />
+      <img src="assets/imagenes/logo-udvillalba.png" class="foto-infantil rounded d-flex" alt="Logo Local"/>
+    </div>
+
+    <div class="vs-box m-3">
+      <h2 class="vs d-flex display-4 fw-bold">VS</h2>
+    </div>
+
+    <div class="foto-rival d-flex justify-content-center flex-column align-items-center">
+      <h1 class="titulo text-center mt-4 fs-2">C.D. GALAPAGAR</h1>
+      <img src="assets/imagenes/logo-cdg.png" class="foto-rival-img rounded" alt="Logo C.D. Galapagar" />
+    </div>
+
+  </section>
+</div>
+
+<section class="text-center my-4">
+  <h2 class="clasificacion mb-4" id="clasificacion">CLASIFICACIÓN</h2>
+  <div class="d-flex justify-content-center">
+    <div class="clasificacion-box bg-body-tertiary rounded p-3 text-center">
+      <div><img src="assets/imagenes/clasificacion1.png" class="img-fluid mb-3" alt="Clasificación parte 1"></div>
+      <div><img src="assets/imagenes/clasificacion2.png" class="img-fluid" alt="Clasificación parte 2"></div>
+    </div>
+  </div>
+</section>
+
+<h2 class="entrenamientos text-center p-3" id="entrenamiento">ENTRENAMIENTOS EXTRA</h2>
+<div class="d-flex justify-content-center m-4 mt-1">
+  <section class="entrenamientos-box bg-body-tertiary rounded d-flex col-12 justify-content-center align-items-center p-3">
+    <select class="entrenamiento-select fw-bold text-center form-select w-50" (change)="onEntrenamientoChange($event)">
+      <option selected class="titulo-select fw-semibold">¿Qué quieres mejorar?</option>
+      <option value="fuerza">Fuerza</option>
+      <option value="velocidad">Velocidad</option>
+      <option value="cardio">Cardio</option>
+      <option value="propiocepcion">Propiocepción</option>
+    </select>
+  </section>
+</div>
+
+<h2 class="menu-titulo text-center" id="menu">MENÚ SEMANAL</h2>
+<div class="d-flex justify-content-center m-5 mt-1">
+  <section class="menu-box bg-body-tertiary rounded d-flex col-12 justify-content-center align-items-center p-3 mb-1">
+    <img src="assets/imagenes/menu-semanal.png" class="foto-menu rounded img-fluid" alt="Menú Semanal">
+  </section>
+</div>
+
+<h2 class="noticias text-center p-1" id="noticias">NOTICIAS</h2>
+<section class="noticias-box bg-body-tertiary rounded d-flex col-12 justify-content-around align-items-start p-3 m-3">
+  <div class="row w-100 text-center">
+    <div class="col-md-4 mb-3">
+      <h2 class="fs-4">Buen trabajo del equipo vs Electrocor</h2>
+      <img src="assets/imagenes/vs-electrocor.jpg" class="imagen-noticia rounded img-fluid" alt="Partido Electrocor">
+    </div>
+    <div class="col-md-4 mb-3">
+      <h2 class="fs-4">El sábado jugamos a las 12:00 en Las Rozas</h2>
+      <img src="assets/imagenes/campo-las-rozas.png" class="imagen-noticia rounded img-fluid" alt="Campo Las Rozas">
+    </div>
+    <div class="col-md-4 mb-3">
+      <h2 class="fs-4">Reunión de familias martes 18:30</h2>
+      <img src="assets/imagenes/reunión-de familia.png" class="imagen-noticia rounded img-fluid" alt="Reunión">
+    </div>
+  </div>
+</section>
+
+<footer class="footer-box d-flex flex-column flex-md-row align-items-center justify-content-around pb-3 bg-light mt-5">
+  <a class="footer-brand pt-3" href="/">
+    <img src="assets/imagenes/logo-udvillalba.png" class="logo" alt="Logo Footer"/>
+  </a>
+
+  <div class="pt-3 fs-5 text-center">
+    <b>Ciudad Deportiva Collado Villalba</b> <br>
+    <div class="d-flex justify-content-center align-items-center mt-2 gap-2">
+      <a href="https://maps.app.goo.gl/m6SW1WwhZfXH7oWAA" target="_blank" class="text-decoration-none btn btn-outline-dark border-0">
+        <i class="bi bi-geo-alt fs-4"></i>
+      </a>
+      <a href="tel:658029169" class="text-decoration-none btn btn-outline-dark border-0">
+        <i class="bi bi-telephone fs-4"></i>
+      </a>
+      <a href="mailto:info@udvillalba.es" class="text-decoration-none btn btn-outline-dark border-0">
+        <i class="bi bi-envelope fs-4"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="rrss pt-4 d-flex gap-4 justify-content-center">
+    <a class="instagram fs-2 text-dark" href="https://www.instagram.com/udvillalba/" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a class="facebook fs-2 text-dark" href="https://www.facebook.com/p/Udvillalba-61577008330622/" target="_blank"><i class="bi bi-facebook"></i></a>
+    <a class="twitter fs-2 text-dark" href="https://x.com/udvillalba" target="_blank"><i class="bi bi-twitter-x"></i></a>
+  </div>
+</footer>
